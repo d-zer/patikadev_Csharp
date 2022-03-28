@@ -12,6 +12,13 @@ namespace interitance
     
     public class Surungenler:hayvanlar
     {
+        public Surungenler()
+        {
+            base.Adaptasyon();
+            base.Beslenme();
+            base.Bolastim();
+            base.Solunum();
+        }
         public void SurunerekHareketEderler()
         {
             Console.WriteLine("Surungenler surunerek hareket eder.");
@@ -20,6 +27,13 @@ namespace interitance
 
     public class Kuslar:hayvanlar
     {
+        public Surungenler()
+        {
+            base.Adaptasyon();
+            base.Beslenme();
+            base.Bolastim();
+            base.Solunum();
+        }
         public void Ucmak()
         {
             Console.WriteLine("Kuslar ucar.");

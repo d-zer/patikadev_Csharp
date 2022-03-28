@@ -10,7 +10,23 @@ namespace inheritance
             //                      --> tohumsuz
             //          -> hayvanlar --> surungenler
             //                       --> kuslar
-            
+
+            TohumluBitkiler tohumluBitki = new TohumluBitkiler();
+            // tohumluBitki.Beslenme(); // canlilar class
+            // tohumluBitki.Solunum();
+            // tohumluBitki.Bolastim();
+            // tohumluBitki.FotosentezYapma(); // bitkiler class
+            // tohumluBitki.TohumluCogalma();
+            tohumluBitki.TohumluCogalma();
+
+            Console.WriteLine("*************");
+
+            Kuslar marti = new Kuslar();
+            // marti.Solunum();
+            // marti.Beslenme();
+            // marti.Bolastim();
+            // marti.Adaptasyon();
+            marti.Ucmak();
         }
     }
 }
