@@ -2,7 +2,7 @@ using System;
 
 namespace interitance
 {   
-    public class canlilar
+    public class canlilar // public sealed ... kalitim vermez
     {
         protected void Beslenme() // property
         {
@@ -17,6 +17,11 @@ namespace interitance
         protected void Bolastim() // property
         {
             Console.WriteLine("Canlilar bosaltim yapar.");
+        }
+
+        public virtual void UyaranlaraTepki()
+        {
+            Console.WriteLine("Canlilar uyaranlara tepki verir.");
         }
     }
     
