@@ -8,6 +8,12 @@ namespace interitance
         {
             Console.WriteLine("Bitkiler fotosentez yapar.");
         }
+
+        public override void UyaranlaraTepki()
+        {
+            // base.UyaranlaraTepki(); üst siniftan gelen mesaji almaz
+            Console.WriteLine("Bitkiler günese tepki verir.");
+        } // ekrana sadece console.writeline yazar
     }
 
     public class TohumluBitkiler:bitkiler
@@ -18,6 +24,7 @@ namespace interitance
             base.Beslenme(); // nesne olusturuldugunda cagrilmayi saglar
             base.Bolastim();
             base.Solunum();
+            base.UyaranlaraTepki();
         }
         public void TohumluCogalma()
         {
